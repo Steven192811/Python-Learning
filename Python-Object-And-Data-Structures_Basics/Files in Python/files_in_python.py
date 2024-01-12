@@ -4,11 +4,14 @@
 myfile = open('myfile.txt') # Open the text file myfile.txt in the same directory
 print(myfile.read()) # Hello this is a text file
 print(myfile.read()) # '' (empty string)
+
 myfile.seek(0) # 0
 print(myfile.read()) # Hello this is a text file
+
 myfile.seek(0)
 contents = myfile.read()
 print(contents) # Hello this is a text file
+
 myfile.seek(0)
 myfile.readlines() # ['Hello this is a text file']
 
