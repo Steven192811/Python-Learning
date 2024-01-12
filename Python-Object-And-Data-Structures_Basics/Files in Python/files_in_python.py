@@ -13,6 +13,7 @@ myfile.seek(0)
 myfile.readlines() # ['Hello this is a text file']
 
 myfile.close() # Close the file
+
 # The above code is not ideal because if there is an error in the code, the file will not close. Instead, use the with statement as shown below.
 with open('myfile.txt') as my_new_file:
     contents = my_new_file.read()
@@ -33,12 +34,15 @@ with open('myfile.txt', mode='r') as myfile:
 
 with open("my_new_file.txt", mode='r') as f:
     print(f.read()) # One on first line Two on second line Three on third line.
+
 with open("my_new_file.txt", mode='a') as f:
     f.write('Four on fourth line.') # Write to the file
+
 with open("my_new_file.txt", mode='r') as f:
     print(f.read()) # One on first line Two on second line Three on third line. Four on fourth line.
 
 with open("asdasdasd.txt", mode='w') as f:
     f.write('I created this file!') # Write to the file
+
 with open("asdasdasd.txt", mode='r') as f:
     print(f.read()) # I created this file!
