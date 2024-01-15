@@ -74,9 +74,10 @@ mynum = randint(0,10) # 0 to 10 (inclusive)
 print(mynum) # 7
 
 # input() function (input() function takes in a user input)
-input('Enter a number here: ') # Enter a number here: 50
-result = input('What is your name? ') # What is your name? Steven
-print(result) # Steven
+result = input('Enter a number here: ') # Enter a number here: #anything
+print (result) # anything
+result = input('What is your name? ') # What is your name? #any name
+print(result) # any name
 
 result = input('Favorite Number: ') # Favorite Number: 30
 type(result) # <class 'str'>
