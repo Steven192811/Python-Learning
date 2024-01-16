@@ -4,7 +4,7 @@
 # Solution:
 st = 'Print only the words that start with s in this sentence'
 for word in st.split(): # for loop
-    if word[0] == 's': # if statement
+    if word[0].lower == 's': # if statement
         print(word) # print word that starts with s
 
 # Use range() to print all the even numbers from 0 to 10.
