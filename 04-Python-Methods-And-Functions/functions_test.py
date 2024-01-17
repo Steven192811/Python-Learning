@@ -59,3 +59,12 @@ def is_greater(x,y):
         return True
     else:
         return False
+
+#8: *args
+#Write a function called myfunc that takes in an arbitrary number of arguments,
+# and returns the sum of those arguments.
+
+def myfunc(*args):
+    return sum(args)
+
+
