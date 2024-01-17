@@ -68,3 +68,13 @@ def myfunc(*args):
     return sum(args)
 
 
+#9: pick evens
+#Write a function called myfunc that takes in an arbitrary number of arguments,
+# and returns a list containing only those arguments that are even.
+
+def myfunc(*args):
+    mylist = []
+    for num in args: # iterate through the tuple
+        if num % 2 == 0: # if number is even
+            mylist.append(num) # append/add the number to the list
+    return mylist
