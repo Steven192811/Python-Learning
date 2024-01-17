@@ -29,3 +29,11 @@ def myfunc(x,y,z):
         return x
     else:
         return y
+
+
+#5: Simple Math
+#Write a function called myfunc that takes in two arguments and returns their sum.
+
+def myfunc(x,y):
+    return x+y
+
