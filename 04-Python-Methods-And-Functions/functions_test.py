@@ -78,3 +78,20 @@ def myfunc(*args):
         if num % 2 == 0: # if number is even
             mylist.append(num) # append/add the number to the list
     return mylist
+
+#10: skyline
+#Write a function called myfunc that takes in a string,
+# and returns a matching string where every even letter is uppercase,
+# and every odd letter is lowercase. Assume that the incoming string
+# only contains letters, and don't worry about numbers, spaces or punctuation.
+# The output string can start with either an uppercase or lowercase letter,
+# so long as letters alternate throughout the string.
+
+def myfunc(word):
+    mylist = []
+    for index,letter in enumerate(word): # enumerate() returns a tuple
+        if index % 2 == 0: # if index is even
+            mylist.append(letter.upper()) # append/add the letter to the list
+        else:
+            mylist.append(letter.lower()) # append/add the letter to the list
+    return ''.join(mylist) # return the list as a string
