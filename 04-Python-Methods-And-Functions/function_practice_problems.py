@@ -33,4 +33,10 @@ print(result)  # True
 
 result = animal_crackers("Elephant Tiger")
 print(result)  # False
- 
+
+
+ # Makes twenty: Given two intergers, return True if the sum of the intergers
+ # is 20 or if one of the integers is 20. If not, return False
+
+def makes_twenty(number1, number2):
+ return number1 + number2 == 20 or number1 == 20 or number2 == 20
