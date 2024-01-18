@@ -18,4 +18,19 @@ result = lesser_of_two_evens(5, 9)
 print(result)  # 9
 
 
+# Animal Crackers: Write a function that takes a two-word string and returns
+# True if both words begin with the same letter
 
+def animal_crackers(text):
+ words = text.split()
+
+# Check if the first letters of both words are the same
+ return words[0][0].lower() == words[1][0].lower()
+
+# Example:
+result = animal_crackers("Lion Leopard")
+print(result)  # True
+
+result = animal_crackers("Elephant Tiger")
+print(result)  # False
+ 
