@@ -40,30 +40,3 @@ print(result)  # False
 
 def makes_twenty(number1, number2):
  return number1 + number2 == 20 or number1 == 20 or number2 == 20
-
-
-
-#Level 1
-
-#1
-#OLD MACDONALD: Write a function that capitaizes the first and fourth
-# letters of a name
-
-def old_macdonald(name):
-    if len(name) >= 4:
-        return name[:3].capitalize() + name[3:].capitalize()
-    else:
-        return "Name is too short!"
-
-# Example:
-result = old_macdonald("macdonald")
-print(result)
-
-
-#2
-#Master Yoda: Given a sentence, return a sentence with words in reversed
-
-def master_yoda(text):
-    wordlist = text.split()
-    reverse_word_list = wordlist[::-1]
-    return " ".join(reverse_word_list)
