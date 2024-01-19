@@ -5,23 +5,23 @@
 # letters of a name
 
 def old_macdonald(name):
-    if len(name) >= 4:
-        return name[:3].capitalize() + name[3:].capitalize()
+    if len(name) >= 4: # if the length of the name is greater than or equal to 4
+        return name[:3].capitalize() + name[3:].capitalize() # return the first 3 letters of the name capitalized and the rest of the name capitalized
     else:
         return "Name is too short!"
 
 # Example:
 result = old_macdonald("macdonald")
-print(result)
+print(result) # MacDonald
 
 
 #2
 #Master Yoda: Given a sentence, return a sentence with words in reversed
 
 def master_yoda(text):
-    wordlist = text.split()
-    reverse_word_list = wordlist[::-1]
-    return " ".join(reverse_word_list)
+    wordlist = text.split() # split the text into a list of words
+    reverse_word_list = wordlist[::-1] # reverse the list of words
+    return " ".join(reverse_word_list) # join the list of words into a sentence
 
 
 #3
@@ -30,3 +30,6 @@ def master_yoda(text):
 
 def almost_there(n):
     return (abs(100 - n) <= 10) or (abs(200 - n) <= 10)
+# if the absolute value
+#of 100 - n is less than or equal to 10 or the absolute value of 200 - n is less
+# than or equal to 10, return True
