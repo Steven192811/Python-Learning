@@ -38,3 +38,28 @@ def blackjack(a,b,c):
         return sum((a,b,c)) - 10 # return the sum of a, b, and c minus 10
     else:
         return 'BUST' # return 'BUST'
+
+
+#4
+# Summer of '69: Return the sum of the numbers in the array, except ignore
+# sections of numbers starting with a 6 and extending to the next 9 (every 6
+# will be followed by at least one 9). Return 0 for no numbers
+
+def summer_69(arr):
+    total = 0 # create a total variable and set it equal to 0
+    add = True # create an add variable and set it equal to True
+
+    for num in arr: # for every number in the array
+        while add: # while add is True
+            if num != 6: # if the number is not 6
+                total += num # add the number to the total
+                break # break out of the while loop
+            else:
+                add = False # set add equal to False
+        while not add: # while add is False
+            if num != 9: # if the number is not 9
+                break # break out of the while loop
+            else:
+                add = True # set add equal to True
+                break # break out of the while loop
+    return total # return the total
