@@ -27,3 +27,28 @@ def ran_bool(num,low,high):
 
 print(ran_bool(3,1,10)) # True
 
+# Write a Python function that accepts a string and calculates the number of upper case letters and lower case letters.
+
+# Sample String : 'Hello Mr. Rogers, how are you this fine Tuesday?'
+
+# Expected Output :
+# No. of Upper case characters : 4
+# No. of Lower case Characters : 33
+
+def up_low(s):
+    d = {'upper':0, 'lower':0}
+    for char in s:
+        if char.isupper():
+            d["upper"] += 1
+        elif char.islower():
+            d['lower'] += 1
+        else:
+            pass
+    print(f'Original String : {s}')
+    print(f'No. of Upper case characters : {d["upper"]}')
+    print(f'No. of Lower case characters : {d["lower"]}')
+
+up_low('Hello Mr. Rogers, how are you this fine Tuesday?')
+# Original String : Hello Mr. Rogers, how are you this fine Tuesday?
+# No. of Upper case characters : 4
+# No. of Lower case characters : 33
