@@ -80,3 +80,13 @@ def multiply(numbers):
 print(multiply([1,2,3,-4])) # -24
 print(multiply([1,2,3,-4,10])) # -240
 
+# Write a Python function that checks whether a passed in string is palindrome or not.
+
+# Note: A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+def palindrome(s):
+    s = s.replace(' ','') # This replaces all spaces ' ' with no space ''. (Fixes issues with strings that have spaces)
+    return s == s[::-1]
+
+print(palindrome('helleh')) # True
+print(palindrome('steven')) # False
