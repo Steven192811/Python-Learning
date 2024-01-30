@@ -52,3 +52,15 @@ up_low('Hello Mr. Rogers, how are you this fine Tuesday?')
 # Original String : Hello Mr. Rogers, how are you this fine Tuesday?
 # No. of Upper case characters : 4
 # No. of Lower case characters : 33
+
+# Write a Python function that takes a list and returns a new list with unique elements of the first list.
+
+# Sample List : [1,1,1,1,2,2,3,3,3,3,4,5]
+
+# Unique List : [1, 2, 3, 4, 5]
+
+def unique_list(lst):
+    return list(set(lst))
+
+
+print(unique_list([1,1,1,1,2,2,3,3,3,3,4,5])) # [1, 2, 3, 4, 5]
