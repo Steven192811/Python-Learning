@@ -90,3 +90,24 @@ def palindrome(s):
 
 print(palindrome('helleh')) # True
 print(palindrome('steven')) # False
+
+# Write a Python function to check whether a string is pangram or not.
+
+# Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
+
+# For example : "The quick brown fox jumps over the lazy dog"
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+# Create a set of the alphabet
+    alphaset = set(alphabet)
+# Remove any spaces from the input string
+    str1 = str1.replace(' ','')
+# Convert into all lowercase
+    str1 = str1.lower()
+# Grab all unique letters from the string set()
+    str1 = set(str1)
+# Alphabet set == string set input
+    return str1 == alphaset
+
+print(ispangram('The quick brown fox jumps over the lazy dog')) # True
+print(ispangram('The quick brown fox jumps over the lazy cat')) # False
