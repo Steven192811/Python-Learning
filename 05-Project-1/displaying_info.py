@@ -1,3 +1,4 @@
+# Displaying Information
 def display(row1, row2, row3):
     print(row1)
     print(row2)
@@ -13,6 +14,7 @@ row2[1] = "X"
 
 display(row1, row2, row3)
 
+# Accepting User Input
 input("Please enter a value: ")
 
 result = input("Please enter a value: ")
@@ -37,4 +39,6 @@ row2[position_index]
 
 result = input("Enter a number here: ")
 
-input("Enter a number here: ") 
+input("Enter a number here: ")
+
+# Validating User Input
