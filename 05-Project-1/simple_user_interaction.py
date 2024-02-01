@@ -40,3 +40,26 @@ def gameon_choice():
     else:
         return False
 
+# Variable to keep game playing
+game_on = True
+
+# First Game List
+game_list = [0, 1, 2]
+
+while game_on:
+    # Clear any historical output and show the game list
+    display_game(game_list)
+
+    # Have player choose position
+    position = position_choice()
+
+    # Rewrite that position and update game_list
+    game_list = replacement_choice(game_list, position)
+
+    # Clear Screen and show the updated game list
+    display_game(game_list)
+
+    # Ask if you want to keep playing
+    game_on = gameon_choice()
+
+                        # Final Code
