@@ -85,4 +85,3 @@ acceptable_values = [0, 1, 2]
 result in acceptable_values # False
 
 result not in acceptable_values # True
-
