@@ -19,3 +19,8 @@ def player_input():
         return ("O", "X")
 
 
+def place_marker(board, marker, position):
+    board[position] = marker
+
+
+
