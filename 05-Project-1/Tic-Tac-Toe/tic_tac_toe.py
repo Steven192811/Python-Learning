@@ -23,4 +23,13 @@ def place_marker(board, marker, position):
     board[position] = marker
 
 
+def win_check(board, mark):
+    return ((board[1] == mark and board[2] == mark and board[3] == mark) or  # across the bottom
+            (board[4] == mark and board[5] == mark and board[6] == mark) or  # across the middle
+            (board[7] == mark and board[8] == mark and board[9] == mark) or  # across the top
+            (board[1] == mark and board[4] == mark and board[7] == mark) or  # down the left
+            (board[2] == mark and board[5] == mark and board[8] == mark) or  # down the middle
+            (board[3] == mark and board[6] == mark and board[9] == mark) or  # down the right
+            (board[1] == mark and board[5] == mark and board[9] == mark) or  # diagonal
+            (board[3] == mark and board[5] == mark and board[7] == mark))  # diagonal
 
