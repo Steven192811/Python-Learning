@@ -18,3 +18,17 @@ class Line:
         return (y2-y1)/(x2-x1) # Slope formula
 
 
+# Problem 2
+# Fill in the class
+
+class Cylinder:
+    def __init__(self,height=1,radius=1):
+        self.height = height
+        self.radius = radius
+
+    def volume(self):
+        return self.height*3.14*(self.radius)**2
+
+    def surface_area(self):
+        top = 3.14 * (self.radius)**2
+        return (2*top) + (2*3.14*self.radius*self.height)
