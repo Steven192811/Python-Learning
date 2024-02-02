@@ -69,5 +69,29 @@ def replay():
     choice = input("Play again? Enter Yes or No")
     return choice == "Yes"
 
+# WHILE LOOP TO KEEP RUNNING THE GAME
+
+print("Welcome to Tic Tac Toe")
+
+while True:
+
+    # PLAY THE GAME
+
+    ## SET EVERYTHING UP (BOARD, WHO'S FIRST, CHOOSE MARKERS X, O)
+
+    the_board = [" "] * 10 # create a list to represent the board
+
+    player1_marker, player2_marker = player_input() # assign player 1 and player 2 markers
+
+    turn = choose_first() # randomly choose who goes first
+    print("The " + turn + " will go first")
+
+    play_game = input("Ready to play? y or n? ")
+
+    if play_game == "y":
+        game_on = True
+    else:
+        game_on = False
+    # Game play
 
 
