@@ -22,3 +22,50 @@ class Dog(Animal): # Inheritance
 
     def bark(self): # New method
         print('WOOF!')
+
+# mydog = Dog() # Animal Created, Dog Created
+
+class Dog():
+    def __init__(self, name): # Overwriting the Animal class
+        self.name = name
+
+    def speak(self):
+        return self.name + ' says woof!'
+
+class Cat():
+    def __init__(self, name): # Overwriting the Animal class
+        self.name = name
+
+    def speak(self):
+        return self.name + ' says meow!'
+
+niko = Dog('niko')
+felix = Cat('felix')
+
+print(niko.speak()) # niko says woof!
+print(felix.speak()) # felix says meow!
+
+for pet in [niko, felix]:
+    print(type(pet)) # <class '__main__.Dog'>, <class '__main__.Cat'>
+    print(pet.speak()) # niko says woof!, felix says meow!
+
+    class Animal():
+        def __init__(self, name):
+            self.name = name
+
+        def speak(self):
+            raise NotImplementedError('Subclass must implement this abstract method')
+
+        class Dog(Animal):
+            def speak(self):
+                return self.name + ' says woof!'
+
+        class Cat(Animal):
+            def speak(self):
+                return self.name + ' says meow!'
+
+        fido = Dog('Fido')
+        minino = Cat('Minino')
+
+        print(fido.speak())
+        print(minino.speak())
