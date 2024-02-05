@@ -9,3 +9,5 @@
 # pip install requests
 
 # pip is like npm in Node.js, or Gem in Ruby.
+# packages are pieces of code that someone else has written that you can use in your own projects.
+
