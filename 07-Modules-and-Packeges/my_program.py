@@ -1,4 +1,4 @@
-from modules_and_packages import my_func
+from modules_and_packages import my_func # This is how you import a function
 from my_main_package import some_main_script # This is how you import a module
 from my_main_package.sub_package import my_sub_script # This is how you import a sub-package
 
