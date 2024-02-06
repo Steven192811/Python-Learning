@@ -5,4 +5,4 @@ from my_main_package.sub_package import my_sub_script # This is how you import a
 my_func()
 
 some_main_script.report_main() # This is how you call a function from a module
-my_sub_script.sub_report()
+my_sub_script.sub_report() # This is how you call a function from a sub-package
