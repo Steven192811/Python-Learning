@@ -1,4 +1,4 @@
-import first
+from _name_and_main_ import first
 
 print ("TOP LEVEL in two.py")
 
